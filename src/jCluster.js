@@ -1,15 +1,14 @@
 (function( $ ) {
  
     $.fn.jCluster = function( action ) {
- 
-        if ( action === "open") {
-            // Open popup code.
-        }
- 
-        if ( action === "close" ) {
-            // Close popup code.
-        }
- 
+		this.children("div").css({'border'		:	'2px solid',
+								  'width'		:	'100px',
+								  'height'		: 	'100px',
+								  'position'	:	'relative',
+								  'float'		:	'left'
+								 });
+		
+		return this;
     };
  
 }( jQuery ));
