@@ -1,5 +1,6 @@
 (function( $ ) {
- 
+	"use strict";
+	
     $.fn.jCluster = function( action ) {
 		this.children("div").css({'border'		:	'2px solid',
 								  'width'		:	'100px',
@@ -9,6 +10,13 @@
 								 });
 		
 		return this;
+    };
+ 
+    // Private function for debugging.
+    function log( obj , msg) {
+        if ( window.console && window.console.log ) {
+            window.console.log( obj + ":" + msg);
+        }
     };
  
 }( jQuery ));
